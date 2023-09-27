@@ -1,0 +1,5 @@
+db_container:
+	docker run --rm --name postgres -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres:alpine:3.17
+
+sqlc-init:
+	sqlc init
